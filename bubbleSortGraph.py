@@ -40,14 +40,14 @@ for i in range(dataCnt): #draw graph
     draw(i)
 
 for i in range(dataCnt-1): #bouble sort and redraw graph
-        for j in range(dataCnt-i-1):
-            if data[j] > data[j+1]:
-                data[j], data[j+1] = data[j+1], data[j]
-                if(debug):
-                    print(data)
-                undo(j)
-                draw(j)
-                undo(j+1)
-                draw(j+1)
+    for j in range(dataCnt-i-1):
+        if data[j] > data[j+1]:
+            data[j], data[j+1] = data[j+1], data[j]
+            if(debug):
+                print(data)
+            undo(j)
+            draw(j)
+            undo(j+1)
+            draw(j+1)
                 
             
